@@ -6,7 +6,7 @@ gem 'sqlite3-ruby', '1.2.5', :require => 'sqlite3'
 
 gem 'gravatar_image_tag', '0.1.0'
 
-gem 'rake', '0.8.7'
+gem 'rake' 
 
 
 group :development do
