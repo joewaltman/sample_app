@@ -38,7 +38,7 @@ class User < ActiveRecord::Base
   end
   
   def feed
-    
+    Micropost.where("user_id = ?", id)
   end
     
     class << self
