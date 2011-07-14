@@ -36,6 +36,10 @@ class User < ActiveRecord::Base
   def has_password?(submitted_password)
     encrypted_password == encrypt(submitted_password)
   end
+  
+  def feed
+    
+  end
     
     class << self
       def authenticate(email, submitted_password)

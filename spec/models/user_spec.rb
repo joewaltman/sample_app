@@ -194,5 +194,13 @@ describe User do
          end.should raise_error(ActiveRecord::RecordNotFound)
       end 
      end
+     
+     describe "status feed" do
+       it "should have a feed" do
+         @user.should respond_to(:feed)
+       end
+       
+     end
+     
    end
 end
